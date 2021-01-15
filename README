@@ -1,0 +1,16 @@
+Solution not fully implemented.
+
+Project contains two binaries, client (rest api) and server (grpc).
+Directory structure:
+
+cmd - entry points for applications
+domain - domain specific interfaces and structs for separation of concernes
+infrastructure - implemention of interfaces which which communicate externally (GRPC send)
+service - business logic , depending on domain and infrastructure packages
+
+Testing:
+
+Initial test outline in port_loader_test.go
+
+
+
