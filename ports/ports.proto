@@ -1,0 +1,42 @@
+// The greeting service definition.
+service PortDomainService {
+  // Sends a greeting
+  rpc AddPort (AddPortRequest) returns (AddPortReply) {}
+  // Sends another greeting
+  rpc GetPort (PortRequest) returns (GetPortReply) {}
+}
+
+message AddPortRequest {
+  required string code = 1;
+    required string name = 2;
+//    required string city = 3 ;
+//    required string province = 4;
+//    required string country = 5;
+//    repeated string alias = 6;
+//    required string longitude = 7;
+//    required string latitude=8;
+//    required string timezone = 9  ;
+}
+
+// The request message containing the user's name.
+message GetPortReply {
+  required string code = 1;
+  required string name = 2;
+  //    required string city = 3 ;
+  //    required string province = 4;
+  //    required string country = 5;
+  //    repeated string alias = 6;
+  //    required string longitude = 7;
+  //    required string latitude=8;
+  //    required string timezone = 9  ;
+}
+
+
+
+message PortRequest {
+  required string code = 1;
+}
+
+message AddPortReply {
+  required string statusCode = 1;
+}
